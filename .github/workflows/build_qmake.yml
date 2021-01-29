@@ -159,7 +159,7 @@ jobs:
           path: ./build/xmly-downloader-qt5_linux.tar.xz
           
       - name: Upload MacOS Artifact
-        if: runner.os == 'macOS'
+        if: runner.os == 'macOSs'
         uses: actions/upload-artifact@v2.1.4
         with:
           name: xmly-downloader-qt5_macOS_${{ github.run_id }}.tar.xz
